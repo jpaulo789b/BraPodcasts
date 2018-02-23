@@ -11,13 +11,9 @@ import { EpisodesComponent } from './episodes/episodes.component';
 import { ResultComponent } from './result/result.component';
 import { MysubscriptionsComponent } from './mysubscriptions/mysubscriptions.component';
 import { AccountComponent } from './account/account.component';
+import { MaterialModule } from './material.module';
 
-import {MatButtonModule, 
-        MatMenuModule, 
-        MatToolbarModule, 
-        MatIconModule, 
-        MatCardModule,
-        MatSidenavModule } from '@angular/material';
+import {BrowserAnimationsModule} from '@angular/platform-browser/animations';
 
 @NgModule({
   declarations: [
@@ -31,23 +27,14 @@ import {MatButtonModule,
     AccountComponent
   ],
   imports: [
-    MatButtonModule,
-    MatMenuModule,
-    MatToolbarModule,
-    MatIconModule,
-    MatCardModule,
-    MatSidenavModule,
+    BrowserAnimationsModule,
+    MaterialModule,
     BrowserModule,
     FormsModule,
     HttpModule
   ],
   exports: [
-    MatButtonModule,
-    MatMenuModule,
-    MatToolbarModule,
-    MatIconModule,
-    MatCardModule,
-    MatSidenavModule
+    MaterialModule
   ],
   providers: [],
   bootstrap: [AppComponent]

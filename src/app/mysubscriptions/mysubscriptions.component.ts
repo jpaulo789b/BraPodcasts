@@ -1,7 +1,7 @@
 import { Component, OnInit } from '@angular/core';
 
 @Component({
-  selector: 'app-mysubscriptions',
+  selector: 'bra-mysubscriptions',
   templateUrl: './mysubscriptions.component.html',
   styleUrls: ['./mysubscriptions.component.css']
 })
